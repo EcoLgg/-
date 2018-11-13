@@ -1,0 +1,108 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+my_num1 <- 2.33
+my_num1
+my_num2 <- 2.0
+my_num2
+my_num3 <- 2
+my_num3
+
+my_int1 <- 2L
+my_int1
+my_int2 <- 2.0L
+my_int2
+my_int3 <- 2.33L
+my_int3
+
+8 > 7 # 耞 8 琌??? 7
+8 < 7 # 耞 8 琌??? 7
+8 >= 7 # 耞 8 琌???单 7
+8 <= 7 # 耞 8 琌???单 7
+8 == 7 # 耞 8 琌单 7
+8 != 7 # 耞 8 琌ぃ单 7
+7 %in% c(8, 7) # 耞 7 琌??? c(8, 7) ぇい
+
+first_name <- "Tony"
+first_name
+class(first_name)
+
+sys_date <- Sys.Date() # ╰参???戳
+sys_date # 癬ㄓ蛤???
+class(sys_date)
+
+sys_time <- Sys.time() # ╰参丁
+sys_time # 癬ㄓ蛤???
+class(sys_time)
+
+my_int1 <- 2L
+class(my_int1)
+my_int2 <- 2.0L
+class(my_int2)
+my_int3 <- 2.33L
+class(my_int3)
+class(TRUE)
+class(FALSE)
+class(T)
+class(F)
+class(True)
+class(true)
+first_name <- 'Tony'
+first_name
+class(first_name)
+
+weather <- sample(c("sunny", "rainy"), size = 1)
+weather
+if (weather == "sunny"){
+  print("Running outdoors!")
+} else {
+  print("Working out in the gym!")
+}
+
+my_seq <- 1:10
+for (i in my_seq) {
+  if (i %% 2 == 0) {
+    print(paste(i, "琌案计"))
+  } else {
+    print(paste(i, "琌计"))
+  }
+}
+
+weather <- sample(c("sunny", "rainy", "cloudy"), size = 1)
+weather
+if (weather == "sunny"){
+  print("Running outdoors!")
+} else if (weather == "cloudy"){
+  print("Cycling!")
+} else {
+  print("Working out in the gym!")
+}
+
+CHscore<-95 ##瓣???Θ罿
+ENscore<-55 ##璣???Θ罿
+if(CHscore>=60){
+  if(ENscore>=60){
+    print("场の")
+  }else{
+    print("瓣???の璣???猳")
+  }
+}else{
+  if(ENscore>=60){
+    print("璣???の瓣???猳")
+  }else{
+    print("场ぃの")
+  }
+}
+
+for (n in 1:10){
+  #n虫???跑计1:10惠璶硋???磅???把计秖
+  print(n)
+}
+
+x <- 0
+while (x<=5) {
+  print(x)
+  x<-x+1
+}
